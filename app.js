@@ -27,4 +27,14 @@ console.log(students);
 /* 
     3:- কিভাবে আমরা আমাদের শ্রেণীকক্ষের সকলের রোল ক্রম অনু্যাযী সাজাতে পারি ?
 */
+function stringSorting(students){
+    return students.sort(
+        (a, b) => {
+            return a - b;
+        }
+    );
+}
 
+const studentRolls = [10, 100, 20, 84, 60, 23, 50 ,40 ,55, 20 ,1 ,3, 2];
+let studentRoll = stringSorting(studentRolls);
+console.log(studentRoll);
