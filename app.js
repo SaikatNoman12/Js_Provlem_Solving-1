@@ -69,8 +69,28 @@ function isVowelCheck(sentence) {
         }
     });
     return count;
-}
-
+};
 
 let sentence = 'My name is Abdullah Al Nomaan.';
 console.log(isVowelCheck(sentence));
+
+
+/* 
+    6:- কোন array থেকে  duplicate number গুলোকে কি ভাবে খুজে বের করে আনতে পারি তার প্রোগ্রাম লিখ ?
+*/
+const numbers = [1, 3, 5, 6, 6, 7, 8, 5, 7, 3, 8, 120, 9, 62];
+
+let duplicateNumber = numbers.filter((value, index, array) => {
+    return array.indexOf(value) !== index;
+});
+console.log(duplicateNumber);
+
+
+
+/* 
+    7:- কোন array থেকে  unique number গুলোকে কি ভাবে খুজে বের করে আনতে পারি তার প্রোগ্রাম লিখ ?
+*/
+let uniqueNumber = numbers.filter((value, index, array) => {
+    return array.indexOf(value) === index;
+});
+console.log(uniqueNumber);
